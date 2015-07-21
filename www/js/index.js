@@ -70,6 +70,8 @@ function onDeviceReady() {
         $('.long-view').html(pos.coords.longitude);
     }
     $('#getIt').click(function() {
+        $("#getIt").css("border-color","red");
+        alert("getting location");
         navigator.geolocation.getCurrentPosition(disp);
     });
 }
