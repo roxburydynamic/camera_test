@@ -12,7 +12,7 @@
         Camera example app.
     </description>
 
-    <preference name="phonegap-version" value="3.0.0" /> 
+    <preference name="phonegap-version" value="3.7.0" /> 
 
-    <gap:plugin name="nl.x-services.plugins.socialsharing">
+    <gap:plugin name="nl.x-services.plugins.socialsharing" />
 </widget>
