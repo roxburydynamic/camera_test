@@ -15,5 +15,5 @@
     <preference name="phonegap-version" value="3.0.0" /> 
 
     <gap:plugin name="org.apache.cordova.core.camera" />
-    <gap:plugin name="fork.cordova.file"/>
+    <gap:plugin name="org.apache.cordova.file"/>
 </widget>
