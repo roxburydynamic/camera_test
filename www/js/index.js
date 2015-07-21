@@ -78,6 +78,7 @@ function geo_ok(pos) {
   $('.lat-view').html(pos.coords.latitude);
   $('.long-view').html(pos.coords.longitude);
 }
-function geo_fail() {
+function geo_fail(error) {
   $(".lat-view, .long-view").html("fail");
+  alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
 }
