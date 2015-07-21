@@ -50,6 +50,7 @@ var app = {
     takePicture: function() {
       navigator.camera.getPicture( function( imageURI ) {
         alert( imageURI );
+        window.plugins.socialsharing.share(null, null, imageURI);
       },
       function( message ) {
         alert( message );

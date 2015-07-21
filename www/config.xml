@@ -18,6 +18,6 @@
     <gap:plugin name="org.apache.cordova.core.camera" />
     <gap:plugin name="nl.x-services.plugins.socialsharing" />
     <gap:plugin name="org.apache.cordova.geolocation" />
-    <gap:plugin name="org.apache.cordova.file"/>
+    <gap:plugin name="org.apache.cordova.file" />
 
 </widget>
