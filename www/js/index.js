@@ -65,13 +65,16 @@ var app = {
 document.addEventListener('deviceready', onDeviceReady, false);
 
 function onDeviceReady() {
+
     function disp(pos) {
+        alert("got location");
         $('.lat-view').html(pos.coords.latitude);
         $('.long-view').html(pos.coords.longitude);
     }
+
     $('#getIt').click(function() {
-        $("#getIt").css("border-color","red");
         alert("getting location");
+        $("#getIt").css("border-color","red");
         navigator.geolocation.getCurrentPosition(disp);
     });
 }
