@@ -69,12 +69,15 @@ function onDeviceReady() {
     $('#getIt').click(function() {
         alert("getting location");
         $("#getIt").css("border-color","red");
-        navigator.geolocation.getCurrentPosition(disp);
+        navigator.geolocation.getCurrentPosition(geo_ok, geo_fail, {timeout: 10000, enableHighAccuracy: true} );
     });
 }
 
-    function disp(pos) {
-        alert("got location");
-        $('.lat-view').html(pos.coords.latitude);
-        $('.long-view').html(pos.coords.longitude);
-    }
+function geo_ok(pos) {
+  alert("got location");
+  $('.lat-view').html(pos.coords.latitude);
+  $('.long-view').html(pos.coords.longitude);
+}
+function geo_fail() {
+  $(".lat-view, .long-view").html("fail");
+}
