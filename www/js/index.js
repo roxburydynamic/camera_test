@@ -43,7 +43,7 @@ var app = {
 
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        window.requestFileSystem(LocalFileSystem.PERSISTENT,0,onFSSuccess,onError);
+        //window.requestFileSystem(LocalFileSystem.PERSISTENT,0,onFSSuccess,onError);
     },
 
 
