@@ -13,7 +13,10 @@
     </description>
 
     <preference name="phonegap-version" value="3.0.0" /> 
+    <preference name="permissions" value="none"/>
+
     <gap:plugin name="org.apache.cordova.core.camera" />
     <gap:plugin name="nl.x-services.plugins.socialsharing" />
+    <gap:plugin name="org.apache.cordova.geolocation" />
 
 </widget>
