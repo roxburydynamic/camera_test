@@ -12,7 +12,8 @@
         Camera example app.
     </description>
 
-    <preference name="phonegap-version" value="3.7.0" /> 
+    <preference name="phonegap-version" value="3.0.0" /> 
     <gap:plugin name="org.apache.cordova.core.camera" />
     <gap:plugin name="nl.x-services.plugins.socialsharing" />
+
 </widget>

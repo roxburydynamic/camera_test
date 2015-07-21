@@ -34,12 +34,14 @@
 
                 <button onclick="app.takePicture();" >Take Picture</button>
             </div>
+
+ 	<hr>
+	<button onclick="window.plugins.socialsharing.share('This is my message')">message only</button>
+	<hr>
+	<button onclick="window.plugins.socialsharing.share(null, null, 'http://www.roxburydynamic.com/logo.png', null)">image only</button>
+
         </div>
 
-<hr>
-<button onclick="window.plugins.socialsharing.share('This is my message')">message only</button>
-<hr>
-<button onclick="window.plugins.socialsharing.share(null, null, 'http://www.roxburydynamic.com/logo.png', null)">image only</button>
 
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="index.js"></script>
