@@ -83,3 +83,17 @@ function geo_fail(error) {
   $(".lat-view, .long-view").html("fail");
   alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
 }
+
+function scanbarcode() {
+  cordova.plugins.barcodeScanner.scan(
+      function (result) {
+          alert("We got a barcode\n" +
+                "Result: " + result.text + "\n" +
+                "Format: " + result.format + "\n" +
+                "Cancelled: " + result.cancelled);
+      }, 
+      function (error) {
+          alert("Scanning failed: " + error);
+      }
+   );
+}
