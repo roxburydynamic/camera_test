@@ -18,5 +18,5 @@
     <gap:plugin name="org.apache.cordova.core.camera" />
     <gap:plugin name="nl.x-services.plugins.socialsharing" />
     <gap:plugin name="org.apache.cordova.geolocation" />
-
+    <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.0.0" />
 </widget>
