@@ -85,15 +85,11 @@ function geo_fail(error) {
 }
 
 function scanbarcode() {
-  cordova.plugins.barcodeScanner.scan(
-      function (result) {
-          alert("We got a barcode\n" +
-                "Result: " + result.text + "\n" +
-                "Format: " + result.format + "\n" +
-                "Cancelled: " + result.cancelled);
-      }, 
-      function (error) {
-          alert("Scanning failed: " + error);
-      }
-   );
+  cordova.plugins.barcodeScanner.scan( function (result) {
+    $("#lastbarcode").html(result.text);
+    //alert("We got a barcode\n" + "Result: " + result.text + "\n" +  "Format: " + result.format + "\n" + "Cancelled: " + result.cancelled);
+  }, function (error) {
+    alert("Scanning failed: " + error);
+  } );
 }
+
