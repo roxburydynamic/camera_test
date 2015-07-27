@@ -98,5 +98,11 @@ function storedata() {
   var lat=$(".lat-view").html();
   var lng=$(".long-view").html();
   var url="http://81.109.211.195/appdev/ajaxtesting/?task=store&bc="+bc+"&lat="+lat+"&lng="+lng;
-  alert(url);
+  $.ajax({
+    url: url,
+    async: false, 
+    success: function(data) { 
+      alert("stored "+data+" record(s)");
+    }
+  });
 }
