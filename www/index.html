@@ -36,10 +36,12 @@
                 </div>
 
                 <button onclick="app.takePicture();">Take Picture</button>
-                <div style='margin-top: 40px; border: 1px solid silver; padding: 20px;' id=getIt>Current location: <span class='lat-view'>??</span>, <span class='long-view'>??</span></div>
+                <div style='margin-top: 20px; border: 1px solid silver; padding: 20px;' id=getIt>Current location: <span class='lat-view'>??</span>, <span class='long-view'>??</span></div>
 
                 <button onclick='scanbarcode();'>Scan Barcode!</button>
                 <div>Last barcode: <span id=lastbarcode></span></div>
+
+                <button style='margin-top: 40px;' onclick='storedata();'>Upload Data</button>
 
             </div>
         </div>
