@@ -94,6 +94,7 @@ function scanbarcode() {
 }
 
 function storedata() {
+  $("#uploadbutton").html("Uploading...");
   var bc=$("#lastbarcode").html();
   var lat=$(".lat-view").html();
   var lng=$(".long-view").html();
@@ -102,6 +103,7 @@ function storedata() {
     url: url,
     async: false, 
     success: function(data) { 
+      $("#uploadbutton").html("Upload Data"); 
       alert("stored "+data+" record(s)");
     }
   });
